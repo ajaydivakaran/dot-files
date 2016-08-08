@@ -1,12 +1,12 @@
-alias gs=git status
-alias gn=git cherry -v
-alias gcm=git commit -m 
-alias gg=git gui
-alias pl=git pull --rebase
-alias pu=git push origin 
-alias gl=git log --oneline --decorate --color
-alias gco= git checkout .
-alias ga=git add -p
-alias grh=git reset --hard HEAD
-alias gam= git commit --amend --no-edit
+alias gs='git status'
+alias gn='git cherry -v'
+alias gcm='git commit -m '
+alias gg='git gui'
+alias pl='git pull --rebase'
+alias pu='git push origin' 
+alias gl='git log --oneline --decorate --color'
+alias gco='git checkout .'
+alias ga='git add -p'
+alias grh='git reset --hard HEAD'
+alias gam='git commit --amend --no-edit'
 
