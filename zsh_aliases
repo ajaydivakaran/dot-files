@@ -1,0 +1,3 @@
+alias dcu="docker-compose up -d"
+alias dcrp="docker-compose run -d --service-ports postgres"
+alias o="nautilus"
