@@ -18,3 +18,4 @@ alias gau='echo -e "a\n*\nq\n"|git add -i'
 alias gsb='git checkout -'
 alias tcf='git ls-files -m | xargs touch'
 alias gbd='git log --left-right --graph --cherry-pick --oneline'
+alias pum="git push origin master"
