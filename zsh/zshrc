@@ -87,8 +87,7 @@ eval "$(fasd --init auto)"
 
 source /home/ajay/projects/dot-files/git_aliases
 source /home/ajay/projects/dot-files/bash_aliases
-
-alias es="cd ~/projects/egov-services"
+source /home/ajay/projects/dot-files/zsh_aliases
 
 export NVM_DIR="/home/ajay/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -104,3 +103,4 @@ autoload -Uz sk
 autoload -Uz sc
 autoload -Uz dt
 autoload -Uz v3
+autoload -Uz v2
