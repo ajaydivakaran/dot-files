@@ -1,0 +1,21 @@
+[global_config]
+[keybindings]
+  next_tab = <Shift><Alt>Right
+  prev_tab = <Shift><Alt>Left
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.41
+    background_image = None
+    copy_on_selection = True
+    font = Monospace 14
+    foreground_color = "#00ff00"
+    use_system_font = False
