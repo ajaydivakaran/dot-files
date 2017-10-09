@@ -26,8 +26,8 @@ export cc
 
 alias bo="./build_offline.sh"
 alias fly="./gradlew flyMig --offline"
-alias omp="google-chrome build/reports/pmd/main.html"
-alias otp="google-chrome build/reports/pmd/test.html"
+alias omp="open --new -a /Applications/Google\ Chrome.app --args file:///Users/ajaydi/projects/blackhawk_provider_worker/build/reports/pmd/main.html"
+alias otp="open --new -a /Applications/Google\ Chrome.app --args file:///Users/ajaydi/projects/blackhawk_provider_worker/build/reports/pmd/test.html"
 
 alias oi="idea ~/projects/gobills_inquiry_service &"
 alias oo="idea ~/projects/gopay_order_service &"
