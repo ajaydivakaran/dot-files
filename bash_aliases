@@ -10,6 +10,7 @@ alias dcd="docker-compose down"
 alias dsp="docker-compose stop db"
 
 alias dsa="docker stop $(docker ps -a -q)"
+alias dda="docker rm -f $(docker ps -a -q)"
 alias dps="docker ps"
 
 alias rdb="docker-compose run --service-ports -d db"
