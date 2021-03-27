@@ -5,10 +5,38 @@ alias dcl="docker-compose logs -f"
 alias dps="docker ps"
 alias dcd="docker-compose down"
 alias dcu="docker-compose up -d"
-alias o="nautilus"
-alias es="cd ~/projects/egov-services"
-alias inf="cd ~/projects/eGov-infraOps"
-alias eb="cd ~/Desktop/Parallels\ Shared\ Folders/Home/Documents/Ebooks && o ."
-alias ac="evince "
-alias op="google-chrome target/site/pmd.html"
-alias sdn="shutdown now"
+
+function dsa() {
+  docker stop $(docker ps -a -q)
+}
+
+function dda() {
+  docker rm -f  $(docker ps -a -q)
+}
+
+
+# Get container id of exiting container
+dgrep(){
+    docker ps -a | grep "$1" | cut -c1-12 | head -n 1 
+}
+
+# bash into an existing container
+dbash() {
+    docker exec -ti $(dgrep "$1") /bin/bash
+}
+
+# sh into an existing container
+dsh() {
+    docker exec -ti $(dgrep "$1") /bin/sh
+}
+
+# Execute something in an existing container
+dex() {
+    docker exec -ti $(dgrep "$1") $2
+}
+
+# Get logs of an existing container
+dlog(){
+    docker logs $(dgrep "$1")
+}
+

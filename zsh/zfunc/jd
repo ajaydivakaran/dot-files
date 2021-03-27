@@ -1,2 +1,0 @@
-CRUMB=$(curl -s -u developer:developer@123 http://jenkins.egovernments.org/crumbIssuer/api/json | jq -r '.crumb')
-curl -XPOST -udeveloper:developer@123 -H "Jenkins-Crumb:$CRUMB" "http://jenkins.egovernments.org/job/deployments/job/deploy-to-dev/buildWithParameters?token=iamadev2017&service=$1&tag=$2&cause=triggered+via+script"
